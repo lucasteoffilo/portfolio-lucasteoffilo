@@ -1,0 +1,149 @@
+* {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html,
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f7f7f8;
+    /* margin: 0 0 450px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1590px;
+    margin: 0.8% auto;
+}
+
+.logo img {
+    width: 290px;
+}
+
+.inline-menu,
+.inline-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-menu>li {
+    display: inline-block;
+    padding-right: 25px;
+    position: relative;
+    list-style-type: none;
+    margin: 1%;
+}
+
+.inline-menu a {
+    text-decoration: none;
+}
+
+.inline-menu>li>ul {
+    display: none;
+    position: absolute;
+}
+
+.inline-menu>li:hover>ul {
+    display: block;
+    width: 100%;
+    /* same width as parent */
+}
+
+.inline-menu.left-menu {
+    float: left;
+    width: 30%;
+}
+
+.inline-menu.right-menu {
+    float: right;
+    width: 30%;
+}
+
+.inline-menu.middle-menu {
+    float: left;
+    margin-top: 2.2%;
+    width: 40%;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.inline-menu.middle-menu a {
+    font-weight: bold;
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.cta-whatsapp {
+    float: right;
+    margin-right: 20%;
+}
+
+.botao-conversar-header {
+    background-color: #00a6fb;
+    /* Rectangle 29 */
+    position: relative;
+    top: -40px;
+    right: -90px;
+    width: 199px;
+    height: 54px;
+    background: #00a6fb;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.botao-conversar-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.margin {
+    margin: 0 2%;
+}
+
+.secao-1 h1 {
+    /* Meu nome é Lucas. Posso desenvolver e dar valor ao seu próximo projeto. */
+    position: absolute;
+    width: 1596px;
+    height: 150px;
+    left: calc(50% - 1596px/2);
+    top: 343px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #051923;
+}
