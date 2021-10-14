@@ -523,7 +523,45 @@ input {
 .section-5 {
     /* Rectangle 23 */
     width: 100%;
-    height: 1715px;
+    height: 1515px;
     margin-top: 600px;
     background: linear-gradient(321.99deg, #051923 21.29%, #002F4A 96.46%);
+    padding-top: 300px;
 }
+
+.sec-5-e {
+    width: 50%;
+    float: left;
+    padding-left: 150px
+}
+
+.sec-5-e-box {
+    /* Rectangle 41 */
+    width: 579px;
+    height: 724px;
+    left: 323px;
+    top: 5131px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 15% 10%;
+}
+
+.sec-5-e-box h2 {
+    font-size: 32px;
+    margin-top: 74px;
+}
+
+.sec-5-e-box span {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.sec-5-d {
+    padding-top: 85px;
+    margin: 0;
+    width: 50%;
+    float: left;
+    padding-left: 150px
+}
+
+.sec-5-d-box {}
