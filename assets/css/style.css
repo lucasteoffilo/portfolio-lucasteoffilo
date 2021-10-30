@@ -365,7 +365,7 @@
     .trabs {
         position: relative;
         margin: 0 auto;
-        padding-top: 100px;
+        padding-top: 170px;
     }
     
     .trab-1 {
@@ -606,7 +606,7 @@
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
-        border-radius: 25px;
+        border-radius: 30px;
         z-index: 8;
         background: linear-gradient(0deg, #008ad0, #008ad0), linear-gradient(0deg, #008ad0, #008ad0), #f54d4d;
         margin-top: -200px;
@@ -1101,5 +1101,15 @@
             top: 200px;
             left: -3px;
             width: 320px;
+        }
+        .sec-5-e-box h2 {
+            font-size: 28px;
+            margin-top: 74px;
+            width: 100%;
+        }
+        .sec-5-e-box span {
+            font-size: 18px;
+            font-weight: 300;
+            width: 100%;
         }
     }
