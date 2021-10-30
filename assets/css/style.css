@@ -1024,11 +1024,7 @@
             display: none;
         }
         .right-menu {
-            position: fixed;
-            bottom: 15px;
-            right: 20px;
-            z-index: 1000;
-            display: none;
+            height: ;
         }
         .secao-1 h1 {
             display: inline-block;
@@ -1047,5 +1043,47 @@
             width: 305px;
             left: calc(50% - 305px / 2 - 0.5px);
             top: 100px;
+        }
+        header {
+            position: fixed;
+            background-color: #fff;
+            width: 100%;
+            z-index: 1000;
+            margin-top: -10px;
+            margin-left: -10px;
+            height: 80px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+        }
+        .logo img {
+            margin-top: 10px;
+            width: 200px;
+        }
+        .botao-conversar-header {
+            background-color: #00a6fb;
+            /* Rectangle 29 */
+            position: relative;
+            top: -45px;
+            right: -70px;
+            width: 159px;
+            height: 44px;
+            background: #00a6fb;
+            border-radius: 27px;
+            cursor: pointer;
+        }
+        .botao-conversar-txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: #fff;
+            font-size: 14px;
+        }
+        .foto-perfil {
+            position: relative;
+            top: 200px;
+            margin-left: -10px;
+            width: 400px;
+            left: calc(50% - 450 / 2);
         }
     }
