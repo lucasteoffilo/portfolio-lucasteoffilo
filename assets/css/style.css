@@ -1112,4 +1112,8 @@
             font-weight: 300;
             width: 100%;
         }
+        .sec-5-e-box img {
+            position: relative;
+            bottom: 0px;
+        }
     }
