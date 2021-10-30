@@ -1008,6 +1008,10 @@
             width: 95%;
             display: block;
         }
+        .s3-e p {
+            font-size: 16px;
+            line-height: 24px;
+        }
         .s3-d {
             display: block;
             margin-top: 50px;
