@@ -1107,13 +1107,15 @@
             margin-top: 74px;
             width: 100%;
         }
+        .sec-5-e-box {
+            height: 524px;
+        }
         .sec-5-e-box span {
             font-size: 18px;
             font-weight: 300;
             width: 100%;
         }
         .sec-5-e-box img {
-            position: relative;
-            bottom: 0px;
+            display: none;
         }
     }
