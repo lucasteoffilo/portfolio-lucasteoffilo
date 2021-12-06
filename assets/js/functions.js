@@ -28,11 +28,14 @@ $(function() {
         });
     });
 
-
-
     $('.trab-1').on('hover', function(event) {
         $(".trab-2").animate({
             height: "200px"
         }, 500);
     });
+
 });
+
+function sendMail() {
+    window.location.replace("https://wa.me/5521982401165?text=Olá%20quero%20contratar!");
+}
