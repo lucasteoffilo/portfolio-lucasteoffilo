@@ -385,7 +385,7 @@
         border-radius: 30px;
         z-index: 8;
         background: linear-gradient(0deg, #003b59, #003b59), #f54d4d;
-        margin-top: -200px;
+        margin-top: -180px;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         -webkit-transition-duration: 0.5s;
@@ -397,7 +397,7 @@
         height: 329px;
         border-radius: 30px;
         z-index: 8;
-        margin-top: -200px;
+        margin-top: -180px;
         background: linear-gradient(0deg, #005784, #005784), #f54d4d;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -410,7 +410,7 @@
         height: 329px;
         z-index: 8;
         border-radius: 30px;
-        margin-top: -200px;
+        margin-top: -180px;
         background: linear-gradient(0deg, #006da5, #006da5), #f54d4d;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -424,7 +424,7 @@
         border-radius: 30px;
         z-index: 8;
         background: linear-gradient(0deg, #008ad0, #008ad0), linear-gradient(0deg, #008ad0, #008ad0), #f54d4d;
-        margin-top: -200px;
+        margin-top: -180px;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         -webkit-transition-duration: 0.5s;
@@ -436,6 +436,7 @@
         height: 200px;
         border-radius: 30px;
         z-index: 8;
+        margin-top: 20px;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
@@ -628,7 +629,7 @@
         height: 1315px;
         margin-top: 600px;
         background: linear-gradient(321.99deg, #051923 21.29%, #002f4a 96.46%);
-        padding-top: 300px;
+        padding-top: 100px;
     }
     
     .sec-5-e {
@@ -704,6 +705,13 @@
         float: right;
     }
     
+    .section-5-h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 42px;
+        padding-bottom: 100px;
+    }
+    
     @media screen and (max-width: 1298px) {
         .section-2 {
             display: none;
@@ -714,6 +722,13 @@
             width: 100%;
             display: flex;
         }
+    }
+    
+    .botao-trab {
+        background-color: #888;
+        width: 400px;
+        margin-top: 100px;
+        text-align: center;
     }
     
     @media screen and (max-width: 1080px) {
@@ -882,7 +897,7 @@
             position: absolute;
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;
@@ -899,7 +914,7 @@
             position: absolute;
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;
@@ -916,7 +931,7 @@
             position: absolute;
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;
@@ -933,7 +948,7 @@
             position: absolute;
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;
@@ -950,7 +965,7 @@
             position: absolute;
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;
@@ -968,7 +983,7 @@
         .trab-6 span {
             font-style: italic;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
             display: flex;
             color: #ffffffb2;

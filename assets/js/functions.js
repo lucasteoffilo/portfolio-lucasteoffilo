@@ -34,8 +34,38 @@ $(function() {
         }, 500);
     });
 
+    $(".sobre a").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".section-3").offset().top
+        }, 2000);
+    });
+
+    $(".inicio a").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".section-1").offset().top
+        }, 2000);
+    });
+
+    $(".trab a").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".section-4").offset().top
+        }, 2000);
+    });
+
+    $(".contato a").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".section-5").offset().top
+        }, 2000);
+    });
 });
 
 function sendMail() {
-    window.location.replace("https://wa.me/5521982401165?text=Olá%20quero%20contratar!");
+    var inputValue = document.getElementById("input-cta-2").value;
+    var url = "https://api.whatsapp.com/send/?phone=5521982401165&text=Ol%C3%A1+quero+contratar"
+    var urlTratada = url + ",+meu+email+é+" + inputValue + "&app_absent=0";
+    if (inputValue == null || inputValue == "" || inputValue == " ") {
+
+    } else {
+        window.location.replace(urlTratada);
+    }
 }
