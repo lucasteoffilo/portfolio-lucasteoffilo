@@ -801,6 +801,11 @@
         align-items: center;
     }
     
+    .fcc-2-col h3 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    
     .container-how-servicos {
         width: 100%;
         max-width: 1280px;
@@ -847,7 +852,7 @@
         }
         .servicos-desc p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
             font-weight: normal;
             text-align: center;
             color: #0e0e10;
@@ -1019,6 +1024,17 @@
     }
     
     @media screen and (max-width: 980px) {
+        .fcc-2-col h3 {
+            margin-top: 200px;
+            font-size: 30px;
+        }
+        #row-4-servicos p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #0e0e10;
+            text-align: left;
+            margin-top: 20px;
+        }
         .section-4 {
             margin-top: 10px;
             width: 100%;
