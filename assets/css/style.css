@@ -324,6 +324,13 @@
         display: flex;
     }
     
+    .t2 {
+        position: relative;
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+    }
+    
     .s3-e {
         width: 50%;
         padding: 0 8%;
@@ -342,6 +349,31 @@
     .s3-d {
         width: 50%;
         margin-top: -60px;
+    }
+    /* d */
+    
+    .t3-d {
+        margin-top: 400px;
+        float: left;
+        width: 50%;
+        padding: 0 8%;
+        margin-bottom: 400px;
+    }
+    
+    .t3-d h1 {
+        font-size: 48px;
+    }
+    
+    .t3-d p {
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .t3-e {
+        margin-top: 340px;
+        float: left;
+        width: 50%;
     }
     
     .section-4 {
@@ -813,6 +845,72 @@
         margin-top: 400px;
     }
     
+    .t1 {
+        width: 100%;
+        text-align: center;
+        height: 900px;
+        margin-top: 130px;
+        background-color: #051923;
+    }
+    
+    .t1 img {
+        position: relative;
+        width: 120px;
+        margin-left: 40px;
+        margin-top: 90px;
+        z-index: 4;
+    }
+    
+    .t1 h1 {
+        position: relative;
+        z-index: 4;
+        padding-left: 40px;
+        padding-top: 250px;
+        font-size: 92px;
+        font-weight: 800;
+        color: #fff;
+    }
+    
+    .t1 h4 {
+        position: relative;
+        z-index: 4;
+        padding-left: 40px;
+        color: #fff;
+    }
+    /*  */
+    
+    .t1-1 {
+        width: 100%;
+        text-align: center;
+        height: 500px;
+        background-color: #2a6685;
+    }
+    
+    .t1-1 img {
+        position: relative;
+        width: 90px;
+        margin-top: 150px;
+        z-index: 4;
+    }
+    
+    .t1-1 h1 {
+        position: relative;
+        z-index: 4;
+        padding-left: 40px;
+        padding-top: 20px;
+        font-size: 64px;
+        line-height: 1.0625;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .t1-1 h4 {
+        position: relative;
+        z-index: 4;
+        padding-left: 40px;
+        color: #fff;
+    }
+    
     @media screen and (max-width: 1324px) {
         #row-4-servicos {
             margin: 2% 2%;
@@ -1158,6 +1256,9 @@
     }
     
     @media screen and (max-width: 910px) {
+        .botao-trab {
+            padding: 5% 3%;
+        }
         .section-2 {
             display: none;
         }
@@ -1201,6 +1302,26 @@
     }
     
     @media screen and (max-width: 660px) {
+        .bg {
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+            background-image: url(../img/art-1.jpg);
+            opacity: 0.0;
+            width: 100%;
+            text-align: center;
+            height: 800px;
+            margin-top: -500px;
+        }
+        .t1 h1 {
+            padding-top: 100px;
+            padding-left: 0px;
+            font-size: 52px;
+        }
+        .t1 h4 {
+            padding-left: 0px;
+            font-size: 14px;
+        }
         .section-2 {
             display: none;
         }
