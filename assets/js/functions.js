@@ -71,5 +71,5 @@ function sendMail() {
 }
 
 function trabalhos() {
-    window.location.replace("http://127.0.0.1:5500/trabalhos.html");
+    window.location.replace("https://lucasteoffilo.github.io/trabalhos.html");
 }
