@@ -1217,7 +1217,7 @@
             margin-top: 20px;
         }
         .section-4 {
-            margin-top: 10px;
+            margin-top: -190px;
             width: 100%;
             padding: 0 2%;
         }
@@ -1230,8 +1230,11 @@
             font-size: 32px;
             font-weight: 900;
         }
+        .section-5-h1 {
+            padding-bottom: 50px;
+        }
         .trabs {
-            margin-top: -50px;
+            margin-top: -120px;
         }
         .trab-1 img {
             margin-top: 9px;
@@ -1334,7 +1337,7 @@
             color: #ffffffb2;
             margin-left: 35px;
             float: left;
-            margin-top: 100px;
+            margin-top: 66px;
         }
     }
     
