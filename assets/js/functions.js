@@ -61,7 +61,7 @@ $(function() {
 
 function sendMail() {
     var inputValue = document.getElementById("input-cta-2").value;
-    var url = "https://api.whatsapp.com/send/?phone=5521982401165&text=Ol%C3%A1+quero+contratar"
+    var url = "https://api.whatsapp.com/send/?phone=5521999480951&text=Ol%C3%A1+quero+contratar"
     var urlTratada = url + ",+meu+email+é+" + inputValue + "&app_absent=0";
     if (inputValue == null || inputValue == "" || inputValue == " ") {
 
@@ -71,5 +71,6 @@ function sendMail() {
 }
 
 function trabalhos() {
-    window.location.replace("https://lucasteoffilo.github.io/trabalhos.html");
+    // window.location.replace("");
+    window.location.href = "https://lucasteoffilo.github.io/trabalhos.html";
 }
