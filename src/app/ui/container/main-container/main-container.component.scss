@@ -1,0 +1,121 @@
+.image {
+    height: 70px;
+}
+
+.logo {
+    object-fit: contain;
+    margin-bottom: 4px;
+}
+
+.menu-option {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: relative;
+
+    // transition: all 0.3s ease-in-out;
+
+    * {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .big-block {
+        position: absolute;
+        height: 80%;
+        top: 10%;
+        width: 30%;
+        right: 10%;
+        transform: rotate(0deg);
+
+        &::after {
+            position: absolute;
+            height: 0%;
+            top: 50%;
+            width: 0%;
+            right: 50%;
+            background: white;
+
+            content: "";
+        }
+    }
+
+    .thin-block {
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        top: 20%;
+        left: 0%;
+    }
+
+    &:hover {
+        .big-block {
+            position: absolute;
+            height: 100%;
+            top: 0%;
+            width: 100%;
+            right: 0%;
+            transform: rotate(90deg);
+
+            &::after {
+                position: absolute;
+                height: 80%;
+                top: 10%;
+                width: 80%;
+                right: 10%;
+                content: "";
+            }
+        }
+
+        .thin-block {
+            position: absolute;
+            height: 40%;
+            width: 40%;
+            top: 30%;
+            left: 30%;
+
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #97b4ff00;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
