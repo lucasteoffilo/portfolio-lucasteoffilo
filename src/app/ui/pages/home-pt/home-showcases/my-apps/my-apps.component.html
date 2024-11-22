@@ -1,7 +1,7 @@
 <div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
     <div fxLayout="column" fxLayoutAlign="start stretch">
         <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row" fxLayoutAlign="start end">
-            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Sites.</h4>
+            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Quer saber mais?</h4>
             <div class="tb-width--12"></div>
             <div fxFlex="60" class="line tb-color-bg--black"></div>
             <div fxFlex class=""></div>
@@ -14,33 +14,95 @@
         <p [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 500}}"
             class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1"
             ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
-            Aqui está alguns dos meus trabalhos recentes feitos utilizando tecnologias como Angular, Nest e AWS.
+            Confira minha coleção de projetos! Clique no botão abaixo e explore mais sobre o que já criei.
         </p>
 
         <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
 
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16" fxLayoutAlign.gt-sm="space-between center"
-            fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none"  [name]="app.name" [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background" [primary]="app.primary">
-                </app-myapp-item>
+        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
+            fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
+            <ng-container>
+
+                <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                    ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+                    <div class="background" style="background: #ffffff;"></div>
+
+                    <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                        class="content tb-position--relative">
+
+                        <div class="image-area">
+                            <img class="image" [src]="'../../../../../../../assets/img/apps/rastreei.png'">
+                        </div>
+                        <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                        <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                            fxLayoutAlign="start center">
+
+                            <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                <h6 class="tb-typo--h6 tb-color--black-54">
+                                    Projeto
+                                </h6>
+
+                                <h6 class="current-typo--h4-bold tb-color--black">
+                                    Rastreei: Plataforma de Rastreamento
+                                </h6>
+
+
+                            </div>
+                            <div class="icon-area" style="border: 1px solid #000000;">
+                                <mat-icon svgIcon="arrow"></mat-icon>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                    ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+                    <div class="background" style="background: #ffffff;"></div>
+
+                    <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                        class="content tb-position--relative">
+
+                        <div class="image-area">
+                            <h6 class="tb-typo--h5 tb-color--black-54" style="margin: 30px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </h6>
+                        </div>
+                        <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                        <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                            fxLayoutAlign="start center">
+
+                            <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                <h6 class="tb-typo--h6 tb-color--black-54">
+                                    Descrição
+                                </h6>
+                            </div>
+                            <div class="icon-area" style="border: 1px solid #000000; visibility: hidden;">
+                                <mat-icon svgIcon="arrow"></mat-icon>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
             </ng-container>
         </div>
-        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16" fxLayoutAlign.gt-sm="space-between center"
-            fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps2">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none"  [name]="app.name" [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background" [primary]="app.primary">
-                </app-myapp-item>
-            </ng-container>
-        </div>
-        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16" fxLayoutAlign.gt-sm="space-between center"
-            fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps3">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none"  [name]="app.name" [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background" [primary]="app.primary">
-                </app-myapp-item>
-            </ng-container>
+
+        <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
+
+        <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
+            fxLayoutAlign="center center" fxLayoutGap="32">
+            <a class="btn-area-cv"
+                href="https://drive.google.com/file/d/1RPKgODUfqKGY5fxXW4oXDFj-wojenvb6/view?usp=sharing"
+                target="_blank">
+                <button mat-raised-button color="white"><span class="current-typo--button-medium">Ver Mais Trabalhos
+                        →</span></button>
+            </a>
         </div>
     </div>
 </div>

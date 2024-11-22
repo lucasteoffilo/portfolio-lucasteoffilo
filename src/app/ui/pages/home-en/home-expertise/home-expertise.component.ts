@@ -108,66 +108,13 @@ export class HomeExpertiseComponent implements OnInit {
   }
 
   _mTools = [
-
-    // design
-    {
-      "id": "5131",
-      "name": "Figma",
-      "logo": "assets/img/tools/figma.svg",
-      "link": "https://www.figma.com/",
-      "tab": "design"
-    },
-    {
-      "id": "5131",
-      "name": "Adobe XD",
-      "logo": "assets/img/tools/xd.png",
-      "link": "https://www.adobe.com/products/xd.html",
-      "tab": "design"
-    },
-
-    {
-      "id": "5132",
-      "name": "Adobe Photoshop",
-      "logo": "assets/img/tools/ps.png",
-      "link": "https://www.adobe.com/products/photoshop.html",
-      "tab": "design"
-    },
-    {
-      "id": "5133",
-      "name": "Adobe Illustrator",
-      "logo": "assets/img/tools/ai.svg",
-      "link": "https://www.adobe.com/products/illustrator.html",
-      "tab": "design"
-    },
-    {
-      "id": "8108",
-      "name": "Sass",
-      "logo": "assets/img/tools/sass.png",
-      "link": "https://sass-lang.com/",
-      "tab": "web"
-    },
-    {
-      "id": "8104",
-      "name": "Ngrx",
-      "logo": "assets/img/tools/ngrx.svg",
-      "link": "https://ngrx.io/",
-      "tab": "web"
-    },
     {
       "id": "8101",
       "name": "Angular",
       "logo": "assets/img/tools/angular.png",
       "link": "https://angular.io/",
       "tab": "web",
-      "color": "#FF4369"
-    },
-
-    {
-      "id": "7121",
-      "name": "Express",
-      "logo": "assets/img/tools/express.png",
-      "link": "https://expressjs.com/",
-      "tab": "back-end"
+      "color": "#303030"
     },
     {
       "id": "7126",
@@ -176,19 +123,13 @@ export class HomeExpertiseComponent implements OnInit {
       "link": "https://nodejs.org/en/",
       "tab": "back-end"
     },
-    // nest
-    // php
-    // python
-    // socket.io
-    // mysql
-    // AWS
     {
       "id": "8108",
       "name": "NestJS",
       "logo": "assets/img/tools/nest.png",
       "link": "https://nestjs.com/",
       "tab": "back-end",
-      "color": "#9c1734"
+      "color": "#303030"
     },
     {
       "id": "8108",
@@ -206,22 +147,40 @@ export class HomeExpertiseComponent implements OnInit {
     },
     {
       "id": "8108",
-      "name": "Socket.io",
-      "logo": "assets/img/tools/socketio.png",
-      "link": "https://socket.io/",
-      "tab": "back-end"
-    },
-
-    {
-      "id": "8108",
       "name": "AWS",
       "logo": "assets/img/tools/aws.png",
       "link": "https://aws.amazon.com/",
       "tab": "cloud",
-      "color": "#996100"
+      "color": "#303030"
     },
-
-
+    {
+      "id": "5131",
+      "name": "Figma",
+      "logo": "assets/img/tools/figma.svg",
+      "link": "https://www.figma.com/",
+      "tab": "design"
+    },
+    {
+      "id": "5131",
+      "name": "Adobe XD",
+      "logo": "assets/img/tools/xd.png",
+      "link": "https://www.adobe.com/products/xd.html",
+      "tab": "design"
+    },
+    {
+      "id": "5132",
+      "name": "Adobe Photoshop",
+      "logo": "assets/img/tools/ps.png",
+      "link": "https://www.adobe.com/products/photoshop.html",
+      "tab": "design"
+    },
+    {
+      "id": "8104",
+      "name": "Entre Outras",
+      "logo": "",
+      "link": "",
+      "tab": "web"
+    }
   ]
 
 }

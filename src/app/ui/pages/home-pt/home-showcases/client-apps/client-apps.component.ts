@@ -22,7 +22,7 @@ export class ClientAppsComponent implements OnInit {
   /* ********************************************************************************************
     *                anims
     */
-  _mTriggerAnim?= 'false'
+  _mTriggerAnim? = 'false'
 
 
 
@@ -119,30 +119,27 @@ export class ClientAppsComponent implements OnInit {
   }
 
   _mClientApps = [
-
     {
-     "id": "5131",
-     "name": "PepPlus: For Academic Growth",
-     "image": "assets/img/clients/pepplus.png",
-     "link": "https://play.google.com/store/apps/details?id=com.pepstudy.pepplus",
-     "tab": "Android",
-     "color": "#FFFFFF"
-   },
-
-
-   {
-     "id": "5132",
-     "name": "WhichOne Shop: Amazon Flipkart",
-     "image": "assets/img/clients/whichone.png",
-     "link": "https://play.google.com/store/apps/details?id=com.whichone",
-     "tab": "Flutter"
-   },
-   {
-     "id": "5133",
-     "name": "Aabboo - Anonymous Chat Rooms",
-     "image": "assets/img/clients/aabboo.png",
-     "link": "https://play.google.com/store/apps/details?id=com.aabboo.social",
-     "tab": "Android"
-   }
+      "id": "5131",
+      "name": "Pinpointhq: Analytics Platform",
+      "image": "assets/img/clients/pinpointhq.png",
+      "link": "https://www.pinpointhq.com/",
+      "tab": "Web",
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "5132",
+      "name": "Ramp: Corporate Cards",
+      "image": "assets/img/clients/ramp.png",
+      "link": "https://ramp.com/",
+      "tab": "Web"
+    },
+    {
+      "id": "5133",
+      "name": "Overpass: Talent Marketplace",
+      "image": "assets/img/clients/overpass.png",
+      "link": "https://www.overpass.com/",
+      "tab": "Web"
+    }
   ];
 }

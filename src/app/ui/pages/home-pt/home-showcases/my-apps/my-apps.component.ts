@@ -52,15 +52,6 @@ export class MyAppsComponent implements OnInit {
       "caption": "Desenvolvimento Fullstack -",
       "primary":"#3FD67D",
       "background":"#E1E1E1"
-    },
-    {
-      "id": "2",
-      "name": "Indike.me: Sistema de indicações",
-      "image": "../../../../../../../assets/img/apps/indikeme.png",
-      "link": "",
-      "tab": "Design",
-      "caption": "UX/UI Design -",
-      "background":"#a6d4ed"
     }
   ];
   

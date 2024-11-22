@@ -34,7 +34,7 @@ export class MyAppsComponent implements OnInit {
       "id": "2",
       "name": "Vetcombella: Professional Portfolio",
       "image": "../../../../../../../assets/img/apps/vetcombella2.png",
-      "link": "https://vetcombella.github.io",
+      "link": "",
       "tab": "Design",
       "caption": "UX/UI Design -",
       "background":"#a6d4ed"

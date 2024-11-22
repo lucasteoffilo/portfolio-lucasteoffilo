@@ -77,3 +77,8 @@ p {
 .grecaptcha-badge {
   opacity: 0 !important;
 }
+
+:host {
+  transform: scale(0.9);
+  transform-origin: top left; // Define a origem do zoom
+}

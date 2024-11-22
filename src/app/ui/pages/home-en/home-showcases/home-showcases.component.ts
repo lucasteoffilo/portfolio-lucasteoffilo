@@ -17,9 +17,9 @@ import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 })
 export class HomeShowcasesComponent implements OnInit {
 
-   readonly ICONS_2: string = "assets/img/icons/icon_set_2.png" 
-   readonly ICONS_2_XS = "assets/img/icons/icon_set_2_xs.png" 
-  
+  readonly ICONS_2: string = "assets/img/icons/icon_set_2.png"
+  readonly ICONS_2_XS = "assets/img/icons/icon_set_2_xs.png"
+
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
   mOnceAnimated = false
 
@@ -29,7 +29,7 @@ export class HomeShowcasesComponent implements OnInit {
   /* ********************************************************************************************
     *                anims
     */
-  _mTriggerAnim?= 'false'
+  _mTriggerAnim? = 'false'
 
 
 
@@ -44,23 +44,23 @@ export class HomeShowcasesComponent implements OnInit {
     public mediaObserver: MediaObserver,
     private scroll: ScrollDispatcher, private viewPortRuler: ViewportRuler,
     private formBuilder: FormBuilder) {
-      this.mediaObserver.asObservable().subscribe((mediaChange: MediaChange[]) => {
+    this.mediaObserver.asObservable().subscribe((mediaChange: MediaChange[]) => {
 
-        if (mediaChange.length > 0) {
-  
-          if (mediaChange[0].mqAlias == "xs") {
-            // console.log("changes: ", mediaChange);
-            this._mIcon2 = this.ICONS_2_XS
-  
-          }else{
-            this._mIcon2 = this.ICONS_2
-  
-          }
+      if (mediaChange.length > 0) {
+
+        if (mediaChange[0].mqAlias == "xs") {
+          // console.log("changes: ", mediaChange);
+          this._mIcon2 = this.ICONS_2_XS
+
+        } else {
+          this._mIcon2 = this.ICONS_2
+
         }
-  
-        // this.opened = this.getOpened(mediaChange);
-      });
-    
+      }
+
+      // this.opened = this.getOpened(mediaChange);
+    });
+
 
   }
 
@@ -79,7 +79,7 @@ export class HomeShowcasesComponent implements OnInit {
     this.destroyed$.complete()
   }
 
-  
+
 
 
   /* ***************************************************************************
@@ -145,33 +145,30 @@ export class HomeShowcasesComponent implements OnInit {
    */
 
   _mClientApps = [
-
     {
-     "id": "5131",
-     "name": "PepPlus: For Academic Growth",
-     "image": "assets/img/clients/pepplus.png",
-     "link": "https://play.google.com/store/apps/details?id=com.pepstudy.pepplus",
-     "tab": "Android",
-     "color": "#FFFFFF"
-   },
-
-
-   {
-     "id": "5132",
-     "name": "WhichOne Shop: Amazon Flipkart",
-     "image": "assets/img/clients/whichone.png",
-     "link": "https://play.google.com/store/apps/details?id=com.whichone",
-     "tab": "Flutter"
-   },
-   {
-     "id": "5133",
-     "name": "Aabboo - Anonymous Chat Rooms",
-     "image": "assets/img/clients/aabboo.png",
-     "link": "https://play.google.com/store/apps/details?id=com.aabboo.social",
-     "tab": "Android"
-   }
+      "id": "5131",
+      "name": "Pinpointhq: Analytics Platform",
+      "image": "assets/img/clients/pinpointhq.png",
+      "link": "https://www.pinpointhq.com/",
+      "tab": "Web",
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "5132",
+      "name": "Ramp: Corporate Cards",
+      "image": "assets/img/clients/ramp.png",
+      "link": "https://ramp.com/",
+      "tab": "Web"
+    },
+    {
+      "id": "5133",
+      "name": "Overpass: Talent Marketplace",
+      "image": "assets/img/clients/overpass.png",
+      "link": "https://www.overpass.com/",
+      "tab": "Web"
+    }
   ];
 
- 
+
 
 }
