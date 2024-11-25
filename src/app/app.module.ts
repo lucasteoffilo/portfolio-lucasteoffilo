@@ -8,10 +8,12 @@ import { ContainerModule } from './ui/container/container.module';
 import { SharedModule } from './ui/@shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from './api/api.module';
+import { ProjectsComponent } from './ui/pages/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

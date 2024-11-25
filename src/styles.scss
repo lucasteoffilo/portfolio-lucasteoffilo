@@ -82,3 +82,7 @@ p {
   transform: scale(0.9);
   transform-origin: top left; // Define a origem do zoom
 }
+
+html, body {
+  overflow: hidden;
+}

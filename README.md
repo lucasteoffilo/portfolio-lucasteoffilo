@@ -1,7 +1,7 @@
-![A preview](https://github.com/lucasteoffilo/lucasteoffilo.github.io/blob/main/images/banner.png)
+![A preview](https://github.com/lucasteoffilo/lucasteoffilo.com/blob/main/images/banner.png)
 
 # Personal Portfolio 
-> [lucasteoffilo.github.io/](https://lucasteoffilo.github.io/)
+> [lucasteoffilo.com/](https://lucasteoffilo.com/)
 
 - **Framework**: [Angular14](https://angular.io/)
 - **Styling**: [SCSS](https://sass-lang.com/)
@@ -26,7 +26,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/lucasteoffilo/lucasteoffilo.github.io.git
+$ git clone https://github.com/lucasteoffilo/lucasteoffilo.com.git
 $ cd braydoncoyer.dev
 $ npm install
 $ ng serve

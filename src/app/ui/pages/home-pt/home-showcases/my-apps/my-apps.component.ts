@@ -19,7 +19,6 @@ export class MyAppsComponent implements OnInit {
 
 
   _mApps = [
-
     {
       "id": "1",
       "name": "Rastreei: Plataforma de Rastreamento",
@@ -56,7 +55,6 @@ export class MyAppsComponent implements OnInit {
   ];
   
   _mApps3 = [
-
     {
       "id": "1",
       "name": "Codando club: Plataforma educacional",
