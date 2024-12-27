@@ -155,9 +155,9 @@ export class HomeShowcasesComponent implements OnInit {
     },
     {
       "id": "5132",
-      "name": "Ramp: Corporate Cards",
+      "name": "Rho: Finance platform",
       "image": "assets/img/clients/ramp.png",
-      "link": "https://ramp.com/",
+      "link": "https://www.rho.co/",
       "tab": "Web"
     },
     {
