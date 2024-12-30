@@ -11,7 +11,8 @@
 
         <p class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1"
             ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
-            Aqui estão alguns dos projetos que desenvolvi, destacando aplicações dinâmicas, APIs, automação, arquitetura de sistemas e soluções tecnológicas criadas para impulsionar negócios.
+            Aqui estão alguns dos projetos que desenvolvi, destacando aplicações dinâmicas, APIs, automação, arquitetura
+            de sistemas e soluções tecnológicas criadas para impulsionar negócios.
         </p>
 
         <!-- INICIO PROJETO -->
@@ -19,63 +20,64 @@
         <div *ngFor="let project of projects">
 
             <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-    
+
             <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
                 fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
                 <ng-container>
-    
-                    <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink" href="https://rastreei.com/"
-                        ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+
+                    <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                        [attr.href]="project.url ? project.url : null" ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column"
+                        #animRefView>
                         <div class="background" style="background: #ffffff;"></div>
-    
+
                         <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
                             class="content tb-position--relative">
-    
+
                             <div class="image-area">
                                 <img class="image" [src]="'../../../../../../../assets/img/apps/rastreei.png'">
                             </div>
                             <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
-    
+
                             <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
                                 fxLayoutAlign="start center">
-    
+
                                 <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
                                     <h6 class="tb-typo--h6 tb-color--black-54">
                                         Projeto
                                     </h6>
-    
+
                                     <h6 class="current-typo--h4-bold tb-color--black">
                                         {{project.titulo}}
                                     </h6>
-    
-    
+
                                 </div>
-                                <div class="icon-area" style="border: 1px solid #000000;">
+                                
+                                <div *ngIf="project.url" class="icon-area" style="border: 1px solid #000000;">
                                     <mat-icon svgIcon="arrow"></mat-icon>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
                     </a>
-    
+
                     <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
                         ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
                         <div class="background" style="background: #ffffff;"></div>
-    
+
                         <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
                             class="content tb-position--relative">
-    
+
                             <div class="image-area">
                                 <h6 class="tb-typo--h5 tb-color--black-54" style="margin: 30px;">
                                     {{project.detalhes}}
                                 </h6>
                             </div>
                             <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
-    
+
                             <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
                                 fxLayoutAlign="start center">
-    
+
                                 <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
                                     <h6 class="tb-typo--h6 tb-color--black-54">
                                         Detalhes sobre o projeto
@@ -84,9 +86,9 @@
                                 <div class="icon-area" style="border: 1px solid #000000; visibility: hidden;">
                                     <mat-icon svgIcon="arrow"></mat-icon>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
                     </a>
                 </ng-container>
@@ -95,6 +97,11 @@
         </div>
 
         <!-- FIM PROJETO -->
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
 
     </div>
 </div>
