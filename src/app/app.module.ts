@@ -9,11 +9,13 @@ import { SharedModule } from './ui/@shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from './api/api.module';
 import { ProjectsComponent } from './ui/pages/projects/projects.component';
+import { ProjectsEnComponent } from './ui/pages/projects-en/projects-en.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
+    ProjectsEnComponent
   ],
   imports: [
     BrowserModule,

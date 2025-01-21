@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmptyContainerComponent } from './ui/container/empty-container/empty-container.component';
 import { MainContainerComponent } from './ui/container/main-container/main-container.component';
 import { ProjectsComponent } from './ui/pages/projects/projects.component'; // Importe o componente aqui
+import { ProjectsEnComponent } from './ui/pages/projects-en/projects-en.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('./ui/pages/home-en/home.module').then((m) => m.HomeModule),
+      },
+      {
+        path: 'projects',
+        component: ProjectsEnComponent,
       }
     ]
   },

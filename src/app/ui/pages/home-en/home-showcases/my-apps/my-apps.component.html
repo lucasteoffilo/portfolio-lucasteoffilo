@@ -1,52 +1,101 @@
 <div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
     <div fxLayout="column" fxLayoutAlign="start stretch">
         <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row" fxLayoutAlign="start end">
-            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Web.</h4>
+            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Want to know more?</h4>
             <div class="tb-width--12"></div>
             <div fxFlex="60" class="line tb-color-bg--black"></div>
             <div fxFlex class=""></div>
         </div>
-
-
 
         <div ngClass.gt-xs="tb-height--36" ngClass.xs="tb-height--20"></div>
 
         <p [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 500}}"
             class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1"
             ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
-            Here are some of my recent works that I have created using technologies like Angular, Nest, and AWS.
+            Check out my collection of projects! Click the button below and explore more about what I've created.
         </p>
 
         <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
 
         <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
             fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" [name]="app.name"
-                    [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background"
-                    [primary]="app.primary">
-                </app-myapp-item>
+            <ng-container>
+
+                <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink" href="https://rastreei.com/"
+                    ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+                    <div class="background" style="background: #ffffff;"></div>
+
+                    <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                        class="content tb-position--relative">
+
+                        <div class="image-area">
+                            <img class="image" [src]="'../../../../../../../assets/img/apps/rastreei.png'">
+                        </div>
+                        <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                        <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                            fxLayoutAlign="start center">
+
+                            <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                <h6 class="tb-typo--h6 tb-color--black-54">
+                                    Project
+                                </h6>
+
+                                <h6 class="current-typo--h4-bold tb-color--black">
+                                    Rastreei: Tracking Platform
+                                </h6>
+
+                            </div>
+                            <div class="icon-area" style="border: 1px solid #000000;">
+                                <mat-icon svgIcon="arrow"></mat-icon>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                    ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+                    <div class="background" style="background: #ffffff;"></div>
+
+                    <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                        class="content tb-position--relative">
+
+                        <div class="image-area">
+                            <h6 class="tb-typo--h5 tb-color--black-54" style="margin: 30px;">
+                                Rastreei is a vehicle tracking and management system aimed at benefit associations, developed with a focus on efficiency and technology. In the development, I created custom codes that automate essential tracking processes, optimizing management and reducing operational costs. Additionally, I implemented new features that expand the system's functionalities, bringing greater accuracy and security to the associates. The Rastreei system combines advanced technology with strategic automation, being an example of how innovation can transform tracking and management services in today's market.
+                            </h6>
+                        </div>
+                        <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                        <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                            fxLayoutAlign="start center">
+
+                            <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                <h6 class="tb-typo--h6 tb-color--black-54">
+                                    Details about the project
+                                </h6>
+                            </div>
+                            <div class="icon-area" style="border: 1px solid #000000; visibility: hidden;">
+                                <mat-icon svgIcon="arrow"></mat-icon>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
             </ng-container>
         </div>
-        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
-            fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps2">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" [name]="app.name"
-                    [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background"
-                    [primary]="app.primary">
-                </app-myapp-item>
-            </ng-container>
-        </div>
-        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
-        <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
-            fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
-            <ng-container *ngFor="let app of _mApps3">
-                <app-myapp-item fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" [name]="app.name"
-                    [link]="app.link" [image]="app.image" [caption]="app.caption" [background]="app.background"
-                    [primary]="app.primary">
-                </app-myapp-item>
-            </ng-container>
+
+        <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
+
+        <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
+            fxLayoutAlign="center center" fxLayoutGap="32">
+            <a class="btn-area-cv">
+                <button mat-raised-button color="white"><span class="current-typo--button-medium" [routerLink]="['projects']">See More Works
+                        →</span></button>
+            </a>
         </div>
     </div>
 </div>

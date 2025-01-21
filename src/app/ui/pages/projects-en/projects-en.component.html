@@ -1,0 +1,126 @@
+<div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+        <div>
+            <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Cases</h4>
+            <div class="tb-width--12"></div>
+            <div fxFlex="60" class="line tb-color-bg--black"></div>
+            <div fxFlex class=""></div>
+        </div>
+
+        <div ngClass.gt-xs="tb-height--36" ngClass.xs="tb-height--20"></div>
+
+        <p class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1"
+            ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+            Here are some of the projects I have developed, highlighting dynamic applications, APIs, automation, architecture
+            of systems, and technological solutions created to boost businesses.
+        </p>
+
+        <!-- START PROJECT -->
+
+        <div *ngFor="let project of projects">
+
+            <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+
+            <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutGap="16"
+                fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="start stretch">
+                <ng-container>
+
+                    <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                        [attr.href]="project.url ? project.url : null" ngClass.xs="xs" ngClass.sm="sm" target="_blank"
+                        fxLayout="column" #animRefView>
+                        <div class="background" style="background: #ffffff;"></div>
+
+                        <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                            class="content tb-position--relative">
+
+                            <div class="image-area">
+                                <img class="image" [src]="project.imagem">
+                            </div>
+                            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                            <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                                fxLayoutAlign="start center">
+
+                                <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                    <h6 class="tb-typo--h6 tb-color--black-54">
+                                        Project
+                                    </h6>
+
+                                    <h6 class="current-typo--h4-bold tb-color--black">
+                                        {{project.titulo}}
+                                    </h6>
+
+                                </div>
+
+                                <div *ngIf="project.url" class="icon-area" style="border: 1px solid #000000;">
+                                    <mat-icon svgIcon="arrow"></mat-icon>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a fxFlex.gt-sm="calc( 50% - 12px )" fxFlex.lt-md="none" class="main tb-position--relative unlink"
+                        ngClass.xs="xs" ngClass.sm="sm" target="_blank" fxLayout="column" #animRefView>
+                        <div class="background" style="background: #ffffff;"></div>
+
+                        <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch"
+                            class="content tb-position--relative">
+
+                            <div class="image-area">
+                                <h6 class="tb-typo--h5 tb-color--black-54" style="margin: 30px;">
+                                    {{project.detalhes}}
+                                </h6>
+                            </div>
+                            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+                            <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row"
+                                fxLayoutAlign="start center">
+
+                                <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                                    <h6 class="tb-typo--h6 tb-color--black-54">
+                                        Details about the project
+                                    </h6>
+                                </div>
+                                <div class="icon-area" style="border: 1px solid #000000; visibility: hidden;">
+                                    <mat-icon svgIcon="arrow"></mat-icon>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </ng-container>
+            </div>
+
+        </div>
+
+        <!-- END PROJECT -->
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+        <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+
+    </div>
+
+    <div>
+        <h4 class="section-title current-typo--h4 tb-flex--shrink-0">Let's Work Together!</h4>
+        <div class="tb-width--12"></div>
+        <div fxFlex="60" class="line tb-color-bg--black"></div>
+        <div fxFlex class=""></div>
+    </div>
+
+    <div ngClass.gt-xs="tb-height--36" ngClass.xs="tb-height--20"></div>
+
+    <p class="section-detail tb-color--black-54" ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1"
+        ngClass.xs="current-typo--body1">
+        Get in touch right now to discuss how we can create amazing solutions.
+    </p>
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+    <div ngClass.gt-xs="tb-height--40" ngClass.xs="tb-height--20"></div>
+</div>
