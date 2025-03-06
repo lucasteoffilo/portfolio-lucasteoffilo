@@ -12,16 +12,25 @@
         <div fxLayout="column" fxLayoutAlign="start stretch">
             <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
 
-            <h2 [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" ngClass.gt-sm="current-typo--h3-light"
+            <!-- <h2 [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" ngClass.gt-sm="current-typo--h3-light"
                 ngClass.sm="current-typo--h3-light" ngClass.xs="current-typo--h4">Expertise.</h2>
 
+            <div ngClass.gt-xs="tb-height--56" ngClass.xs="tb-height--20"></div> -->
             <div ngClass.gt-xs="tb-height--56" ngClass.xs="tb-height--20"></div>
 
+            <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
+                fxLayoutAlign="start end">
+                <h4 class="tools-title current-typo--h4 tb-flex--shrink-0">Expertise</h4>
+                <div class="tb-width--12"></div>
+                <div fxFlex="60" class="line tb-color-bg--black"></div>
+                <div fxFlex class=""></div>
+            </div>
+            <div ngClass.gt-xs="tb-height--36" ngClass.xs="tb-height--20"></div>
 
             <div fxLayout.gt-xs="row wrap" fxLayout.xs="column" fxLayoutAlign="space-between stretch">
 
                 <app-expertise-item [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}" fxFlex.gt-xs="46"
-                    fxFlex.xs="none" [isColored]="true" jobType="Desenvolvimento" [parts]='["Landing Pages, Plataformas Robustas e Automatização"]'>
+                    fxFlex.xs="none" [isColored]="true" jobType="Desenvolvimento" [parts]='["Landing Pages, Plataformas e Inteligência Artificial"]'>
                 </app-expertise-item>
                 <app-expertise-item [@transitionText]="{value:_mTriggerAnim, params:{animDelay:300}}" fxFlex.gt-xs="46"
                     fxFlex.xs="none" jobType="Mobile"
@@ -37,7 +46,7 @@
 
             <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
                 fxLayoutAlign="start end">
-                <h4 class="tools-title current-typo--h4 tb-flex--shrink-0">Ferramentas e tecnologias.</h4>
+                <h4 class="tools-title current-typo--h4 tb-flex--shrink-0">Ferramentas e tecnologias</h4>
                 <div class="tb-width--12"></div>
                 <div fxFlex="60" class="line tb-color-bg--black"></div>
                 <div fxFlex class=""></div>
