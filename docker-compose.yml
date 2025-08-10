@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # Serviço de produção
+  portfolio-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: lucasteoffilo-portfolio-prod
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - portfolio-network
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`portfolio.localhost`)"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=80"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Serviço de desenvolvimento (opcional)
+  portfolio-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    container_name: lucasteoffilo-portfolio-dev
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm start
+    environment:
+      - NODE_ENV=development
+    networks:
+      - portfolio-network
+    profiles:
+      - dev
+
+networks:
+  portfolio-network:
+    driver: bridge
+
+# Volumes para cache (opcional)
+volumes:
+  node_modules_cache:
+    driver: local
+  nginx_logs:
+    driver: local

@@ -1,0 +1,80 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Arquivos de build e distribuição
+dist/
+docs/
+build/
+.angular/
+
+# Arquivos de teste
+*.spec.ts
+*.test.ts
+coverage/
+.nyc_output/
+karma.conf.js
+
+# Arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos de controle de versão
+.git/
+.gitignore
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Documentação
+README*.md
+*.md
+ref.md
+
+# Arquivos do Docker
+.dockerignore
+docker-compose*.yml
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos específicos do Angular
+.angular/
+e2e/
+
+# Arquivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Zone.Identifier (Windows)
+*:Zone.Identifier
