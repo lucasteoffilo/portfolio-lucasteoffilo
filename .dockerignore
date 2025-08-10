@@ -1,0 +1,50 @@
+# Arquivos de controle de versão
+.git
+.gitignore
+.gitattributes
+
+# Arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Documentação (se houver)
+README.md
+*.md
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos do Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.yaml
+
+# Arquivos de dependências (se houver)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.production
+.env.development
